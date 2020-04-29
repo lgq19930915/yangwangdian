@@ -146,7 +146,11 @@ export default {
       addShop: "shop/addShop"
     }),
     add() {
+      console.log("====================================");
+      console.log(this.detail.buySelect);
+      console.log("====================================");
       var buySelect = this.detail.buySelect.map(item => {
+        console.log(item);
         return {
           ...item,
           select: item.list[item.selectIndex]

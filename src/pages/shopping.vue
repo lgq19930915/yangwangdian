@@ -29,20 +29,8 @@
           <p>除</p>
         </div>
       </div>
-      <!-- <div class="settle">
-        <div class="settle_l">
-          <div class="settle_l_top">
-            <img @click="quanxuan" :src="radio_hig" alt />
-            <img @click="redact" :src="enitor_nor" alt />
-          </div>
-          <div class="settle_l_btm">
-            <span>全选</span>
-            <span>编辑</span>
-          </div>
-        </div>
-      </div>-->
     </section>
-    <section class="sec1" v-if="sec1">
+    <section class="sec1" v-if="shopping==0">
       <img :src="shoppingwu" alt />
       <p>购物车还是是空的</p>
       <p>快去逛逛吧~</p>
@@ -70,7 +58,7 @@ export default {
       sp,
       shoppingwu,
       sec: true,
-      sec1: false,
+      sec1: true,
       qxsc: true
     };
   },
@@ -121,6 +109,7 @@ h2 {
 .sec {
   padding: 0.2rem;
   height: 3rem;
+  margin-bottom: 3rem;
 }
 .p1 {
   color: #ccc;
