@@ -6,7 +6,7 @@
     </header>
     <section class="sec" v-if="sec">
       <p class="p1">
-        <img :src="store" alt />杭州保税区
+        <img :src="store" alt />杭州保税
       </p>
       <!-- <p>{{shopping}}</p> -->
       <div class="secCot" v-for="(item,i) in shopping" :key="item.pid">
